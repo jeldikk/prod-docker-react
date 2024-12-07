@@ -27,5 +27,5 @@ jobs:
           environment_name: Prod-frontend-env
           existing_bucket_name: elasticbeanstalk-ap-south-1-339712998487
           region: ap-south-1
-          version_description: ${{ github.sha }}
+          version_label: ${{ github.sha }}
           deployment_package: deploy.zip
