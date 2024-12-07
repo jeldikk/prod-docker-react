@@ -12,7 +12,7 @@ services:
   frontend_tests:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.dev
     volumes:
       - /app/node_modules
       - ~/prod-grade-flow/frontend:/app
