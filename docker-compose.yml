@@ -2,19 +2,7 @@ services:
   frontend:
     build:
       context: .
-      dockerfile: Dockerfile.dev
-    ports:
-      - 3000:3000
-    volumes:
-      - /app/node_modules
-      - ~/prod-grade-flow/frontend:/app
-
-  frontend_tests:
-    build:
-      context: .
       dockerfile: Dockerfile
-    volumes:
-      - /app/node_modules
-      - ~/prod-grade-flow/frontend:/app
-    command: ["npm", "run", "test"]
+    ports:
+      - 80:80
     
