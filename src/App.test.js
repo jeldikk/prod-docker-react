@@ -22,5 +22,5 @@ test.skip("docker should detect this test", () => {
 test("should have a header with class App-header", () => {
   const {container} = render(<App />);
   const header = container.querySelector('header');
-  expect(header).toHaveClass('App-Header')
+  expect(header).toHaveClass('App-header')
 })
