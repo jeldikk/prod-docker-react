@@ -1,7 +1,7 @@
 services:
   frontend:
     build:
-      context: ./frontend
+      context: .
       dockerfile: Dockerfile.dev
     ports:
       - 3000:3000
@@ -11,7 +11,7 @@ services:
 
   frontend_tests:
     build:
-      context: ./frontend
+      context: .
       dockerfile: Dockerfile.dev
     volumes:
       - /app/node_modules

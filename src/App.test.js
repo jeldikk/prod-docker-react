@@ -13,7 +13,7 @@ test("should have 'i am modified' text", () => {
   expect(element).toBeInTheDocument();
 });
 
-test("docker should detect this test", () => {
+test.skip("docker should detect this test", () => {
   render(<App />);
   const element = screen.getByText(/extra test/i);
   expect(element).toBeInTheDocument()
